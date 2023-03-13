@@ -1,33 +1,107 @@
-.navbar {
-    background-color: white;
+body {
+    text-align: center;
+}
+.title {
+ background-color: black;
+ color: white;
+ padding: 1% 0;
+}
+.heading {
+    padding: 0;
+    margin: 0;
 }
 .feature {
     background-image: url(images/download.png);
-}
-.header {
+    padding: 10% 0;
     color: white;
+    font-size: x-large;
 }
-.welcome {
-    background-color: #035772;
+.Transfer {
+    background-color: black;
+    color: white;
+    padding: 1% 7%;
+    margin: 1% 0;
 }
-.admissions {
+.Freshman {
+    padding: 1% 7%;
+}
+
+.btn1 {
+    background-color: black;
+    color: white;
+    padding: 1% 2%;
+}
+.btn2 {
+    padding: 1% 2%;
+}
+
+/* Nav-Menu */
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1.5% 0;
     background-color: white;
-    color: #035772;
-}
-.apply-btn {
-    background-color: #035772;
-    color: white;
-    border-style: none;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: black;
     text-decoration: none;
-}
-.apply-btn:hover {
-    color: #035772;
-    border-style: solid;
-    border-width: thin;
-    background: transparent;
-    border-color: #035772;
-}
-.form {
-    background-color: #035772;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 768px) {
+    nav {
+      display: block;
+    }
+  
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  /* Form */
+  .form {
+    background-color: black;
     color: white;
-}
+  }
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  input {
+    width: 50%;
+    padding: 1% 0;
+  }
+  @media (max-width: 768px) {
+    .form-group {
+      flex-direction: column;
+    }
+    input {
+        width: 100%;
+        margin-top: 4%;
+    }
+  }
